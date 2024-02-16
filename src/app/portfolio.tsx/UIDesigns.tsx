@@ -13,11 +13,11 @@ export default function UIDesigns() {
     <div>
       <h6 className="mb-4">UI Designs</h6>
 
-      <div className="flex justify-center items-center w-full gap-10">
+      <div className="flex flex-col md:flex-row justify-center items-center w-full gap-10">
         {staticImages.map((image, index) => (
           <div
             key={index}
-            className="relative overflow-hidden basis-1/3 rounded-2xl h-[19rem] border-8 border-black"
+            className="relative overflow-hidden md:basis-1/3 rounded-2xl h-80 md:h-64 lg:h-[19rem] border-8 border-black"
           >
             <Image
               alt="Designs by Xander"
@@ -33,7 +33,7 @@ export default function UIDesigns() {
         ))}
       </div>
 
-      <div className="flex justify-end mt-4 px-4">
+      <div className="flex justify-center md:justify-end mt-4 px-4">
         <button
           className="text-[#F80000]"
           onClick={() => toggleShowMore((prev) => !prev)}

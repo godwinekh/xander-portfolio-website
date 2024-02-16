@@ -55,7 +55,7 @@ export default function ContentDesigns() {
         ))}
       </div>
 
-      <div className="flex justify-end mt-4 px-4">
+      <div className="flex justify-center md:justify-end mt-4 px-4">
         <button
           className="text-[#F80000]"
           onClick={() => toggleShowMore((prev) => !prev)}

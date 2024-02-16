@@ -8,18 +8,21 @@ export default function Bio() {
   const [showMore, toggleShowMore] = useState(false);
 
   return (
-    <div id="bio" className="px-32 pt-10 pb-32 bg-[#1e1e1e] rounded-t-[5rem]">
-      <div className="flex justify-start items-baseline gap-16 mb-16">
-        <h2 className="text-8xl font-extrabold">
+    <div
+      id="bio"
+      className="px-8 md:px-16 lg:px-32 pt-10 pb-32 bg-[#1e1e1e] rounded-t-[5rem] -md:mt-10"
+    >
+      <div className="flex flex-col md:flex-row justify-start items-baseline gap-2 md:gap-16 mb-16">
+        <h2 className="text-5xl md:text-8xl font-extrabold">
           Bio<span className="text-[#F80000]">.</span>
         </h2>
-        <p className="text-[#F80000] font-semibold">
+        <p className="text-[#F80000] md:font-semibold">
           Determined for greatness and sees no limitation
         </p>
       </div>
 
-      <div className="flex flex-col justify-center items-center space-y-6">
-        <div className="flex justify-center items-center">
+      <div className="flex flex-col justify-center items-center space-y-6 text-center md:text-left">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-0">
           <div className="basis-1/3 flex justify-center items-center">
             <div className="w-72 h-72 rounded-full overflow-hidden border border-white">
               <Image
@@ -34,7 +37,7 @@ export default function Bio() {
           </div>
 
           {/* Bio text */}
-          <div className="basis-1/2 space-y-6 font-thin">
+          <div className="lg:basis-1/2 space-y-6 font-thin">
             <p>
               Greetings! I'm Xander, a versatile creative professional with a
               passion for turning ideas into captivating visual experiences.
@@ -60,7 +63,7 @@ export default function Bio() {
         </div>
 
         {/* More text */}
-        <div className={`w-11/12 font-thin ${showMore ? "block" : "hidden"}`}>
+        <div className={`lg:w-11/12 font-thin ${showMore ? "block" : "hidden"}`}>
           {moreText.map((skill, index) => (
             <div key={index} className="my-6 space-y-1">
               <h6 className="font-light">{skill.heading}</h6>
@@ -73,7 +76,7 @@ export default function Bio() {
         </div>
       </div>
 
-      <div className="flex justify-end mt-10 w-11/12">
+      <div className="flex justify-end mt-10 lg:w-11/12">
         <button onClick={() => toggleShowMore((prev) => !prev)}>
           See {showMore ? "less" : "more"}
         </button>

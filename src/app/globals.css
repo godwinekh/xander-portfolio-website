@@ -47,5 +47,19 @@
   height: 4rem;
   transform: translate(0, -35%);
   z-index: 20;
-  outline: .5px;
+  outline: 0.5px;
+}
+
+@media (max-width: 640px) {
+  .circle-with-arrow::before {
+    transform: translate(15%, 10%);
+  }
+
+  .circle-with-arrow::after {
+    transform: translate(8%, 0%);
+  }
+
+  .arrow {
+    transform: translate(-21%, -35%);
+  }
 }

@@ -6,7 +6,7 @@ interface NavProps {
 
 export default function Navigation({className}: NavProps) {
   return (
-    <nav className={`flex justify-center items-center gap-16 rounded-full px-16 py-2 ${className}`}>
+    <nav className={`hidden md:flex justify-center items-center gap-16 rounded-full px-16 py-2 ${className}`}>
       <Link href="#home">Home</Link>
       <Link href="#bio">Bio</Link>
       <Link href="#portfolio">Portfolio</Link>
