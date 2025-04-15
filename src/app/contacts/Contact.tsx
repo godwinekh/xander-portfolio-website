@@ -1,6 +1,7 @@
 import Image from "next/image";
-import XanderLogo from "@@/images/xander logo.png";
+import XanderLogo from "@@/images/xander-logo-black.png";
 import Navigation from "../header/Navigation";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -19,15 +20,19 @@ export default function Contact() {
 
       <div className="flex flex-col justify-center items-start gap-6">
         <div>
-          <p className="text-[#F80000] text-2xl md:text-4xl font-semibold">
+          <Link
+            href="https://www.linkedin.com/in/xandereke/"
+            target="_blank"
+            className="text-[#F80000] text-2xl md:text-4xl font-semibold"
+          >
             LinkedIn
-          </p>
+          </Link>
         </div>
 
         <p className="text-xl md:text-5xl">hey@xandereke.com</p>
 
         <div className="flex flex-col md:flex-row justify-between items-center border-y border-black py-10 md:py-14 mt-10">
-          <div className="relative basis-1/6 bg-[#1e1e1e]">
+          <div className="relative basis-1/6">
             <Image
               alt="Xander Name Logo"
               src={XanderLogo}

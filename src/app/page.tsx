@@ -7,8 +7,8 @@ import Contact from "./contacts/Contact";
 
 export default function Home() {
   return (
-    <main className="max-w-full h-full pt-10 container flex flex-col relative bg-black bg-opacity-85 text-white">
-      
+    <main className="max-w-full h-full container flex flex-col relative bg-slate-950 text-white">
+
       <Header />
       <Bio />
       <Portfolio />

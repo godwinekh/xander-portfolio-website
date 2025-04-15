@@ -11,6 +11,7 @@ import BSReview from "@@/images/Benza sayz review JW4.png";
 import Praying from "@@/images/Praying Moment Every month design.png";
 import NYDF from "@@/images/NYDF vision1x1.png";
 import Jovial from "@@/images/Jovial bw.png";
+import Link from "next/link";
 
 const staticImages = [
   IntlEducation,
@@ -56,12 +57,14 @@ export default function ContentDesigns() {
       </div>
 
       <div className="flex justify-center md:justify-end mt-4 px-4">
-        <button
+        <Link
+          href="https://drive.google.com/drive/folders/1vzmDL8htnTl53rgWyCf-eS_9w43KuFh9?usp=sharing"
+          target="_blank"
           className="text-[#F80000]"
           onClick={() => toggleShowMore((prev) => !prev)}
         >
           See {showMore ? "less" : "more"}
-        </button>
+        </Link>
       </div>
     </div>
   );

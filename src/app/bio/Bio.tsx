@@ -10,7 +10,7 @@ export default function Bio() {
   return (
     <div
       id="bio"
-      className="px-8 md:px-16 lg:px-32 pt-10 pb-32 bg-[#1e1e1e] rounded-t-[5rem] -md:mt-10"
+      className="px-8 md:px-16 lg:px-32 pt-10 pb-32 bg-[#1e1e1e] rounded-t-[5rem]"
     >
       <div className="flex flex-col md:flex-row justify-start items-baseline gap-2 md:gap-16 mb-16">
         <h2 className="text-5xl md:text-8xl font-extrabold">
@@ -63,7 +63,9 @@ export default function Bio() {
         </div>
 
         {/* More text */}
-        <div className={`lg:w-11/12 font-thin ${showMore ? "block" : "hidden"}`}>
+        <div
+          className={`lg:w-11/12 font-thin ${showMore ? "block" : "hidden"}`}
+        >
           {moreText.map((skill, index) => (
             <div key={index} className="my-6 space-y-1">
               <h6 className="font-light">{skill.heading}</h6>
