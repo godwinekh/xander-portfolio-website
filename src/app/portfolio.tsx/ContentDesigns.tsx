@@ -39,15 +39,14 @@ export default function ContentDesigns() {
         {staticImages.map((image, index) => (
           <div
             key={index}
-            className="relative overflow-hidden w-40 h-40 rounded-2xl border-4 border-black"
+            className="relative overflow-hidden w-full h-auto md:w-40 md:h-40 rounded-2xl border-4 border-black"
           >
             <Image
               alt="Content Designs by Xander"
               src={image}
               quality={100}
               placeholder="blur"
-              fill
-              sizes="100vw"
+              className="w-full h-auto"
               style={{
                 objectFit: "cover",
               }}

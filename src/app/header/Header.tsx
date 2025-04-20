@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header id="home" className="flex flex-col h-screen relative">
-      <div className="absolute top-0 left-0 right-0 bottom-0 h-[35rem] overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 bottom-0 h-screen overflow-hidden">
         <Image
           alt="background image"
           src={BlueBackground}
@@ -46,11 +46,13 @@ export default function Header() {
 
         <div className="flex-1 flex flex-col justify-center items-center">
           <div className="font-thin space-y-2 md:space-y-0.5">
-            <p>Hi, I heard you were looking for me.</p>
-            <p className="text-4xl md:text-6xl font-bold">
+            <p className="text-3xl md:text-md mb-16 md:mb-0">
+              Hi, I heard you were looking for me.
+            </p>
+            <p className="text-6xl md:text-6xl font-bold">
               I&apos;m Alexander Eke
             </p>
-            <p>Graphics &amp; UI/UX Designer</p>
+            <p className="text-xl md:text-md">Graphics &amp; UI/UX Designer</p>
           </div>
         </div>
       </div>

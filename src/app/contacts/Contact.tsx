@@ -29,10 +29,17 @@ export default function Contact() {
           </Link>
         </div>
 
-        <p className="text-xl md:text-5xl">hey@xandereke.com</p>
+        <Link
+          href="mailto:alexanderekexander@gmail.com"
+          target="_blank"
+          className="text-xl md:text-5xl"
+        >
+          alexanderekexander@gmail.com
+        </Link>
+        {/* https://mail.google.com/mail/?view=cm&fs=1&to=alexanderekexander@gmail.com&body=I%20would%20like%20to%20connect%20with%20you. */}
 
-        <div className="flex flex-col md:flex-row justify-between items-center border-y border-black py-10 md:py-14 mt-10">
-          <div className="relative basis-1/6">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center border-y border-black py-10 md:py-14 mt-10">
+          <div className="relative md:basis-1/6">
             <Image
               alt="Xander Name Logo"
               src={XanderLogo}
@@ -45,7 +52,7 @@ export default function Contact() {
             />
           </div>
 
-          <Navigation className="bg-[#1e1e1e] text-white" />
+          <Navigation className="w-auto bg-[#1e1e1e] text-white" isFooter={true} />
         </div>
 
         <p className="text-center w-full">&copy; XAnDeR 2024</p>
